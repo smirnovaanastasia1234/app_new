@@ -1,7 +1,12 @@
-from fastapi import FastAPI
+import numpy as np 
+import pandas as pd
+import matplotlib.pyplot as plt 
+import seaborn as sns
 import streamlit as st
+import matplotlib.pyplot as plt
 from transformers import pipeline
-from pydantic import BaseModel
+
+
 
 st.header("Определение тональности текстов")
 st.subheader("Введите текст для анализа")
