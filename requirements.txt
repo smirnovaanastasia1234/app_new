@@ -1,0 +1,10 @@
+fastapi==0.88.0
+uvicorn==0.20.0
+transformers==4.24.0
+tensorflow==2.10.1
+numpy==1.22.4
+pandas==1.4.2
+matplotlib==3.5.2
+seaborn==0.11.2
+streamlit==1.10.0
+torch
