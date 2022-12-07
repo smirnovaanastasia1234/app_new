@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import streamlit as st
 from transformers import pipeline
 from pydantic import BaseModel
 
