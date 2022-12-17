@@ -6,6 +6,10 @@ from transformers import pipeline
 
 st.header("Определение тональности текстов")
 st.subheader("Введите текст для анализа")
+def load_model():
+	  return torch.load("path/to/model.pt")
+
+model = load_model()
 
 text = st.text_area(" ",height=100)
 
