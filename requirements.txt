@@ -1,12 +1,8 @@
-fastapi==0.88.0
-uvicorn==0.20.0
 transformers==4.24.0
 tensorflow
-streamlit==1.10.0
+streamlit
 torch
 huggingface_hub
-flax
-googletrans
 jax[cpu]
 docs/source/en/quicktour.mdx
 docs/source/es/quicktour.mdx
