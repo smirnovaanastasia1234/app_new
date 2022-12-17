@@ -3,6 +3,7 @@ from transformers import pipeline
 
 
 @st.cache(allow_output_mutation=True)
+
 st.header("Определение тональности текстов")
 st.subheader("Введите текст для анализа")
 
