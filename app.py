@@ -4,9 +4,9 @@ from transformers import pipeline
 @st.cache(allow_output_mutation=True)
 
 def load_model():
-	  model=pipeline("sentiment-analysis",   
+    model=pipeline("sentiment-analysis",   
                       "blanchefort/rubert-base-cased-sentiment")
-      return model
+    return model
 
 model = load_model()
 st.header ("Определение тональности текстов")
