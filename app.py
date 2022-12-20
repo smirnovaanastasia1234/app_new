@@ -18,6 +18,6 @@ result = st.button("Определить тональность текста")
 if result:
     res = model(text)
     sent = res[0]['label'] 
-    st.write(classifier(text)[0]["label"])
+    st.write(model(text)[0]["label"])
 
 
