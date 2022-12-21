@@ -50,22 +50,3 @@ elif option == "Определение тональности текста":
     sent = res[0]['label'] 
     st.write(model(text)[0]["label"])
 
-elif option == "Word Cloud":
-
-	st.header("Generate Word Cloud")
-	st.subheader("Generate a word cloud from text containing the most popular words in the text.")
-
-	# Ask for text or text file
-	st.header('Enter text or upload file')
-	text = st.text_area('Type Something', height=400)
-
-	# Upload mask image 
-	mask = st.file_uploader('Use Image Mask', type = ['jpg'])
-
-	# Add a button feature
-	if st.button("Generate Wordcloud"):
-
-		# Generate word cloud 
-		st.write(len(text))
-		nlp.create_wordcloud(text, mask)
-		st.pyplot()
