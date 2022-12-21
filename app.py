@@ -2,7 +2,6 @@ import numpy as np
 import streamlit as st
 from transformers import pipeline
 from PIL import  Image
-import text_analysis as nlp
 
 # Title of the application 
 st.title('Анализ тональности текста\n', )
