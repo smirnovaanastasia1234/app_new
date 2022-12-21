@@ -28,13 +28,8 @@ if option == 'Home':
 				from the left side bar.
 			"""
 		)
-
-
-# Word Cloud Feature
-elif option == "Word Cloud"
-
 elif option == "Определение тональности текста":
-    
+
 @st.cache(allow_output_mutation=True)
 
 def load_model():
