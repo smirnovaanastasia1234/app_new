@@ -1,6 +1,32 @@
+import numpy as 
 import streamlit as st
 from transformers import pipeline
 
+# Title of the application 
+st.title('Анализ тональности текста\n', )
+st.subheader("by Group 32")
+
+display = Image.open('images/display.jpg')
+display = np.array(display)
+st.image(display)
+
+# Sidebar options
+option = st.sidebar.selectbox('выбрать из списка', 
+["Home",
+ "Определение тональности текста", 
+  "Word Cloud", 
+ ])
+
+st.set_option('deprecation.showfileUploaderEncoding', False)
+
+if option == 'Home':
+	st.write(
+			"""
+				## Project Description
+				This is a complete text analysis tool developed by Group 32. It's built in with multiple features which can be accessed
+				from the left side bar.
+			"""
+		)
 @st.cache(allow_output_mutation=True)
 
 def load_model():
