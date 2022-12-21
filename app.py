@@ -30,7 +30,6 @@ if option == 'Home':
 		)
 elif option == "Определение тональности текста":
 
-@st.cache(allow_output_mutation=True)
 
 def load_model():
     model=pipeline("sentiment-analysis",   
