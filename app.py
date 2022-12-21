@@ -21,3 +21,4 @@ if result:
     st.write(model(text)[0]["label"])
 
 
+
