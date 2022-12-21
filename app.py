@@ -5,7 +5,7 @@ from PIL import  Image
 
 # Title of the application 
 st.title('Анализ тональности текста\n', )
-st.subheader("by Group 32")
+st.subheader("Группа 32: Смирнова А., Кожедуб Н., Багаудинов Э., Петраков В.")
 
 display = Image.open('images/display.jpg')
 display = np.array(display)
@@ -13,19 +13,18 @@ st.image(display)
 
 # Sidebar options
 option = st.sidebar.selectbox('выбрать из списка', 
-["Home",
+["Главная",
  "Определение тональности текста", 
   "Word Cloud", 
  ])
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-if option == 'Home':
+if option == 'Главная':
 	st.write(
 			"""
-				## Project Description
-				This is a complete text analysis tool developed by Group 32. It's built in with multiple features which can be accessed
-				from the left side bar.
+				## Описание проекта
+				Это инструмент анализа текста, разработанный группой 32. Доступ к инстументам можно получить в левой боковой панели.
 			"""
 		)
 elif option == "Определение тональности текста":
