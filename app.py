@@ -28,6 +28,18 @@ if option == 'Home':
 				from the left side bar.
 			"""
 		)
+
+
+# Word Cloud Feature
+elif option == "Word Cloud":
+    
+    st.header("Generate Word Cloud")
+	st.subheader("Generate a word cloud from text containing the most popular words in the text.")
+    # Ask for text or text file
+	st.header('Enter text or upload file')
+	text = st.text_area('Type Something', height=400)
+
+elif option == "Определение тональности текста":
 @st.cache(allow_output_mutation=True)
 
 def load_model():
