@@ -45,7 +45,7 @@ elif option == "Определение тональности текста":
  result = st.button("Определить тональность текста")
 
 
-if result:
+ if result:
     res = model(text)
     sent = res[0]['label'] 
     st.write(model(text)[0]["label"])
